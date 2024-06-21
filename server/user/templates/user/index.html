@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Fill the form</h1>
+        <form action="{% url 'user-details' %}" method="POST">
+            {% csrf_token %}
+            <!-- By Entering your name we should get a url -->
+            <input type="text" name="user_name" placeholder="Enter your name">
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
