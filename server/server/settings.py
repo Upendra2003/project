@@ -25,9 +25,7 @@ SECRET_KEY = 'django-insecure-*+_)u139_wn!_yoivn=!d9wjc4zbjya$^&)+@*xbgwffn)ocls
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['project-ro3u.onrender.com']
-
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -39,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'user.apps.UserConfig'
+    'user.apps.UserConfig',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
